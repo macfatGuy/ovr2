@@ -1,6 +1,5 @@
 ﻿#include <iostream>
-#include <cmath> // for abs
-
+#include <cmath> 
 int gcd(int a, int b) {
     if (b == 0) {
         return a;
@@ -31,7 +30,6 @@ public:
         normalize();
     }
 
-    // Перегрузка операторов (без изменений)
     Fraction operator+(const Fraction& other) const {
         return Fraction(numerator_ * other.denominator_ + other.numerator_ * denominator_, denominator_ * other.denominator_);
     }
